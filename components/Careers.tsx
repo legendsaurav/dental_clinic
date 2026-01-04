@@ -8,7 +8,7 @@ const Careers: React.FC = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 mb-20">
         <div className="lg:col-span-1">
           <h2 className="text-sm font-bold text-teal-600 uppercase tracking-widest mb-4">Join Our Team</h2>
-          <h3 className="text-3xl md:text-5xl font-bold text-slate-900 leading-tight mb-8">Professional Growth at Teeth Care</h3>
+          <h3 className="text-3xl md:text-5xl font-bold text-slate-900 leading-tight mb-8">Professional Growth at 32 Dental Care</h3>
           <p className="text-lg text-slate-600 leading-relaxed mb-8">
             Be part of a team dedicated to excellent patient care. We offer continuous learning, latest technology access, and a supportive expert environment.
           </p>

@@ -4,14 +4,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Teeth Care Multispeciality Dental Clinic</title>
+    <title>32 Dental Care | Dr. Saikat Saha | Madhyamgram</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/theme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
+      :root {
+        --brand-teal: #0d9488;
+        --brand-slate: #0f172a;
+      }
       body {
-        font-family: 'Inter', 'Poppins', sans-serif;
+        font-family: 'Plus Jakarta Sans', sans-serif;
         scroll-behavior: smooth;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+      .glass {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+      }
+      .animate-float {
+        animation: float 4s ease-in-out infinite;
       }
     </style>
   <script type="importmap">
@@ -25,7 +50,7 @@
 </script>
 <link rel="stylesheet" href="/index.css">
 </head>
-  <body>
+  <body class="bg-slate-50 text-slate-900 selection:bg-teal-100 selection:text-teal-900">
     <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
 </body>

@@ -43,6 +43,7 @@ export interface Branch {
     sun: string;
   };
   mapUrl: string;
+  embedMapUrl?: string;
 }
 
 export interface Testimonial {
@@ -51,6 +52,8 @@ export interface Testimonial {
   text: string;
   rating: number;
   service?: string;
+  date?: string;
+  reply?: string;
 }
 
 export interface BlogPost {

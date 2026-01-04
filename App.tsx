@@ -8,7 +8,6 @@ import Services from './components/Services';
 import Team from './components/Team';
 import Branches from './components/Branches';
 import Gallery from './components/Gallery';
-import Careers from './components/Careers';
 import Testimonials from './components/Testimonials';
 import Blog from './components/Blog';
 import ContactForm from './components/ContactForm';
@@ -58,15 +57,11 @@ const App: React.FC = () => {
           <Branches />
         </section>
 
-        <section id="careers" className="bg-white">
-          <Careers />
-        </section>
-
-        <section id="blog" className="bg-slate-50">
+        <section id="blog" className="bg-white">
           <Blog />
         </section>
 
-        <section id="testimonials" className="bg-white">
+        <section id="testimonials" className="bg-slate-50">
           <Testimonials />
         </section>
 
@@ -80,7 +75,7 @@ const App: React.FC = () => {
       {/* Floating CTA for Mobile */}
       <div className="fixed bottom-6 right-6 z-50 md:hidden">
         <a 
-          href="tel:+919876543210" 
+          href="tel:+919830110321" 
           className="bg-teal-600 text-white p-4 rounded-full shadow-2xl flex items-center justify-center hover:bg-teal-700 transition-colors"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
