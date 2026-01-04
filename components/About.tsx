@@ -17,25 +17,25 @@ const About: React.FC = () => {
   ];
 
   return (
-    <div className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="py-16 md:py-24 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
       {/* Hero Part */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-24">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-20 items-center mb-16 md:mb-24">
         <div className="relative group">
-          <div className="grid grid-cols-2 gap-4">
-            <img src="https://picsum.photos/seed/about1/500/700" className="rounded-[40px] shadow-2xl transition-transform group-hover:-translate-y-2 duration-500" alt="Clinic" />
-            <img src="https://picsum.photos/seed/about2/500/700" className="rounded-[40px] shadow-2xl mt-12 transition-transform group-hover:translate-y-2 duration-500" alt="Specialist" />
+          <div className="grid grid-cols-2 gap-2 md:gap-4">
+            <img src="https://picsum.photos/seed/about1/500/700" className="rounded-[30px] md:rounded-[40px] shadow-2xl transition-transform group-hover:-translate-y-2 duration-500 w-full h-auto max-h-[320px] md:max-h-[500px] object-cover" alt="Clinic" />
+            <img src="https://picsum.photos/seed/about2/500/700" className="rounded-[30px] md:rounded-[40px] shadow-2xl mt-6 md:mt-12 transition-transform group-hover:translate-y-2 duration-500 w-full h-auto max-h-[320px] md:max-h-[500px] object-cover" alt="Specialist" />
           </div>
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white/80 backdrop-blur-md p-8 rounded-[40px] shadow-2xl text-center border-4 border-teal-600/20">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white/80 backdrop-blur-md p-4 md:p-8 rounded-[30px] md:rounded-[40px] shadow-2xl text-center border-4 border-teal-600/20 w-32 md:w-auto">
             <p className="text-teal-600 font-bold text-xs uppercase tracking-widest mb-1">Since</p>
-            <p className="text-4xl font-black text-slate-900">2006</p>
+            <p className="text-2xl md:text-4xl font-black text-slate-900">2006</p>
           </div>
         </div>
 
-        <div className="space-y-8">
+        <div className="space-y-6 md:space-y-8">
           <div>
-            <h2 className="text-sm font-bold text-teal-600 uppercase tracking-widest mb-4">About Our Practice</h2>
-            <h3 className="text-3xl md:text-5xl font-bold text-slate-900 leading-tight">
-              Best Dental Hospital in <br /> Kolkata and Eastern India
+            <h2 className="text-xs md:text-sm font-bold text-teal-600 uppercase tracking-widest mb-2 md:mb-4">About Our Practice</h2>
+            <h3 className="text-2xl md:text-5xl font-bold text-slate-900 leading-tight">
+              Best Dental Hospital in <br className="hidden md:block" /> Kolkata and Eastern India
             </h3>
           </div>
 

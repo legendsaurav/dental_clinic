@@ -19,22 +19,22 @@ const Services: React.FC = () => {
     : SERVICES.filter(s => s.category === filter);
 
   return (
-    <div className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="text-center max-w-3xl mx-auto mb-16">
-        <h2 className="text-sm font-bold text-teal-600 uppercase tracking-widest mb-4">Our Services</h2>
-        <h3 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">Comprehensive Dental Care</h3>
-        <p className="text-lg text-slate-600">Equipped with Intra Oral Scanners, smile design software, and the latest dental tech to heal your pain.</p>
+    <div className="py-16 md:py-24 max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+      <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
+        <h2 className="text-xs md:text-sm font-bold text-teal-600 uppercase tracking-widest mb-2 md:mb-4">Our Services</h2>
+        <h3 className="text-2xl md:text-5xl font-bold text-slate-900 mb-4 md:mb-6">Comprehensive Dental Care</h3>
+        <p className="text-base md:text-lg text-slate-600">Equipped with Intra Oral Scanners, smile design software, and the latest dental tech to heal your pain.</p>
       </div>
 
       {/* Filter Tabs */}
-      <div className="flex flex-wrap justify-center gap-4 mb-16">
+      <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-10 md:mb-16">
         {categories.map((cat) => (
           <button
             key={cat.id}
             onClick={() => setFilter(cat.id)}
-            className={`px-8 py-3 rounded-full font-bold text-sm transition-all border-2 ${
-              filter === cat.id 
-              ? 'bg-teal-600 border-teal-600 text-white shadow-lg shadow-teal-200' 
+            className={`px-5 md:px-8 py-2 md:py-3 rounded-full font-bold text-xs md:text-sm transition-all border-2 ${
+              filter === cat.id
+              ? 'bg-teal-600 border-teal-600 text-white shadow-lg shadow-teal-200'
               : 'bg-white border-slate-200 text-slate-600 hover:border-teal-600 hover:text-teal-600'
             }`}
           >
